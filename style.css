@@ -1,0 +1,51 @@
+
+body{
+    background-color: #377dff;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #000000; 
+}
+
+h3 {
+    color: #000000; 
+}
+
+
+input[type="number"] {
+    padding: 5px;
+    width: 100px;
+}
+
+p {
+    color: #6c757d; /* Cinza */
+}
+
+span {
+    font-weight: bold;
+}
+
+#contador {
+    color: #dc3545; /* Vermelho */
+}

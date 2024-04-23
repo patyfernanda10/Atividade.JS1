@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Javascript</title>
+
+</head>
+<body class="fundo">
+    <div class="container">
+    <h1>Javascript</h1>
+    <br><br>
+    <h3>1 - Crie um alerta: Olá, Mundo!</h3>
+    <h3>2 - Faça uma interação ao clicar em algum botão, como uma mensagem de notificação.</h3>
+    
+    <button class="btn btn-outline-dark" onclick="emitirAlerta()">Emitir Alerta</button>
+    <br><br>
+    <br><br>
+
+    <h3>3 - Use os métodos prompt() e alert() em conjunto.</h3>
+    <h3>4 - Interaja com parte do HTML (DOM).</h3>
+    <button class="btn btn-outline-dark" onclick="solicitarNome()">Clique aqui para inserir seu nome</button>
+    <br><br>
+    <h4 id="nomeInserido"></h4>
+    <br><br>
+    
+    <h3>5 - Receba algum número e manipule ele.</h3>
+    <p>Insira um número para saber o seu dobro</p>  
+    <input type="number" id="numeroQualquer"></input>
+    <br><br>
+    <button class="btn btn-outline-dark" onclick="dobraNumero()">Calcular</button>
+    <br>
+    <h4 id="resultado1"></h4>
+    <br><br><br><br>
+
+    <h3>6 - Receba dois números, faça uma soma e uma multiplicação deles.</h3>
+    <p>informe um número</p>
+    <input type="number" id="num1"></input>
+    <br><br>
+    <input type="number" id="num2"></input>
+    <br><br>
+    <button class="btn btn-outline-dark" onclick="calcNumero()">Calcular</button>
+    <br>
+    <h4 id="resu1" ></h4>
+    <br>
+    <h4 id="resu2" ></h4>
+    <br><br><br><br>
+
+    <h3>7 - Calcule a média das notas de um aluno.</h3>
+    <p>Informe as notas de um aluno</p>
+    <input type="number" id="nota1"></input>
+    <br><br>
+    <input type="number" id="nota2"></input>
+    <br><br>
+    <input type="number" id="nota3"></input>
+    <br><br>
+    <input type="number" id="nota4"></input>
+    <br><br>
+    <button class="btn btn-outline-dark" onclick="calcMedia()">Calcular</button>
+    <br>
+    <h4 id="resuMedia" ></h4>
+    <br><br><br><br>
+       
+    <h3>8 - Receba um número e faça os seguintes cálculos: Raiz Quadrada, Raiz Cúbica, Potenciação ao Quadrado e Potenciação ao Cubo.</h3>
+    <p>Informe um número</p>
+    <input type="number" id="numero"></input>
+    <br><br>
+    <button class="btn btn-outline-dark" onclick="calcular()">Calcular</button>
+    <br>
+    <h4 id="resuCalc1" ></h4>
+    <br>
+    <h4 id="resuCalc2" ></h4>
+    <br>
+    <h4 id="resuCalc3" ></h4>
+    <br>
+    <h4 id="resuCalc4" ></h4>
+    <br><br>
+
+    <h3>9 - Crie um contador de cliques.</h3>
+    <button class="btn btn-outline-dark" id="botao" onclick="aumentarContador()">Clique Aqui</button>
+    <p>Contagem de Cliques: <span id="contador">0</span></p>
+
+    <script>
+    
+    var contador = 0;
+
+    function aumentarContador() {
+       
+        contador++;
+       
+        document.getElementById("contador").innerText = contador;
+    }
+    </script>
+    <br><br>
+    <script src="js/index.js"></script>
+</div> 
+</body>
+</html>
